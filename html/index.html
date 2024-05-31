@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selamat Ulang Tahun!</title>
+    <style>
+        body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    padding-top: 10%;
+    padding-left: 5%;
+    background-color: #FF0080;
+    font-family: sans-serif;
+}
+
+.container {
+    text-align: center;
+    background-color: #71C9CE;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #373A40;
+}
+
+.birthday-image {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.message {
+    font-size: 1.2em;
+    margin: 20px 0;
+    color: black;
+    font-family: sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+button {
+    background-color: pink;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e65a50;
+}
+
+audio {
+    display: none;
+}
+
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <h1>Selamat Ulang Tahun</h1>
+        <h1>Tuti Alawiyah!</h1>
+        <img src="tuti alawiyah.jpg" alt="Gambar Ulang Tahun" class="birthday-image">
+        <p class="message">
+            Semoga hari harimu dipenuhi dengan kebahagiaan.
+        </p>
+        <p class="message">
+            Panjang umur ya tut, yang sehat sehat juga.
+        </p>
+        <p class="message">
+           semoga kuliahnya di lancarin ya tut, lulus tepat waktu dan juga lulusan terbaik
+        </p>
+        <p class="message">
+            sukses selalu tut!
+        </p>
+        <p class="message">
+            btw kayanya masih jarang makan nasi deh wkwk
+        </p>
+        <p class="message">
+            Puter dong lagu nya, biar ada balik rasa ke masa kecil gitu wkwk.
+        </p>
+        <button onclick="playAudio()">Putar audio</button>
+        <audio id="birthday-audio" src="/bbb/Lagu Ulang Tahun Anak _ Selamat Ulang Tahun (192 kbps).mp3"></audio>
+    </div>
+    <script>
+        function playAudio() {
+    var audio = document.getElementById('birthday-audio');
+    audio.play();
+}
+
+    </script>
+</body>
+</html>
