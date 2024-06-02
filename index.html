@@ -20,14 +20,22 @@
 .container {
     text-align: center;
     background-color: #71C9CE;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
     color: #373A40;
-    padding-top: 40vh;
+    padding-top: 50vh;
+}
+
+.balon{
+    width: 25%;
+    max-width: 50px%;
+    height: auto;
+    margin-top: 0;
+    border-radius: 0;
 }
 
 .birthday-image {
@@ -41,7 +49,7 @@ h2 {
 .message {
     font-size: 1.2em;
     margin: 20px 0;
-    color: black;
+    font-color: black;
     font-family: sans-serif;
     font-weight: 100;
     font-style: normal;
@@ -71,6 +79,9 @@ audio {
 <body>
     <div class="container">
         <h2>Selamat Ulang Tahun <br> Tuti Alawiyah!</h2>
+        <img src="bunga2-removebg-preview.png" alt="dekorasi" class="balon">
+        <img src="balon_ultah-removebg-preview.png" alt="dekorasi" class="balon">
+        <img src="bunga1-removebg-preview.png" alt="dekorasi" class="balon">
         <img src="tuti alawiyah.jpg" alt="Gambar Ulang Tahun" class="birthday-image">
         <p class="message">
             Semoga hari harimu dipenuhi dengan kebahagiaan.
@@ -88,7 +99,10 @@ audio {
             btw kayanya masih jarang makan nasi deh wkwk
         </p>
         <p class="message">
-            Puter dong lagu nya, biar ada balik rasa ke masa kecil gitu, <br> tapi kalo ga keputer tunggu ya lagi undug wkwk.
+            Puter dong lagu nya, biar ada balik rasa ke masa kecil gitu
+        </p>
+        <p class="message">
+            tetep temenan baik ya tut wkwk
         </p>
         <button onclick="playAudio()">Putar audio</button>
         <audio id="birthday-audio" src="Lagu Ulang Tahun Anak _ Selamat Ulang Tahun (192 kbps).mp3"></audio>
