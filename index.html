@@ -25,28 +25,12 @@
 
         h2 {
             color: #373A40;
-            padding-top: 50vh;
+            padding-top: 30vh;
         }
 
         .birthday-image-container {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .decorations {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            gap: 20;
-            margin: 0 0;
-        }
-
-        .decoration {
-            width: 100%;
-            max-width: 100%;
-            height: auto;
-            border-radius: 50%;
+            position: relative;
+            display: inline-block;
         }
 
         .birthday-image {
@@ -54,9 +38,9 @@
             max-width: 300px;
             height: auto;
             border-radius: 15px;
-            margin: 20px auto;
+            /* margin: 20px auto; */
+            z-index: 1;
         }
-
         .message {
             margin: 20px 0;
             color: #FFFFFF;
@@ -89,15 +73,8 @@
     <div class="container">
         <h2>Selamat Ulang Tahun <br> Tuti Alawiyah!</h2>
         <div class="birthday-image-container">
-            <div class="decorations">
-                <img src="images-removebg-preview (1).png" alt="Bunga" class="decoration">
-                <img src="balon_ultah-removebg-preview.png" alt="Balon" class="decoration">
-            </div>
-            <img src="tuti alawiyah.jpg" alt="Gambar Ulang Tahun" class="birthday-image">
-            <div class="decorations">
-                <img src="balon_ultah-removebg-preview.png" alt="Balon" class="decoration">
-                <img src="images-removebg-preview (1).png" alt="Bunga" class="decoration">
-            </div>
+            <img src="tuti alawiyah 1.png" alt="Gambar Ulang Tahun" class="birthday-image">
+            <div class="flower-frame"></div>
         </div>
         <p class="message">
             Semoga hari harimu dipenuhi <br> dengan kebahagiaan.
